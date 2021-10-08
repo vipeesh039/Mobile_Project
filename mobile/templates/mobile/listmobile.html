@@ -25,16 +25,10 @@
 
 {% if request.user.is_superuser %}
 <div class="booklist">
-<h2>Mobiles List</h2>
-<div>
-    <a href="{%url 'addproduct'%}" class="btn btn-success">Add Product</a>
-     <a href="{%url 'base'%}" class="btn btn-success">Home</a>
-</div>
+<h4>MOBILE LIST</h4>
 <div class="row">
-    <table class="table">
-        <tr>
-            <td> Product name</td>
-        </tr>
+    <table style="margin-left:12px;" class="table">
+
 
     {%for mobile in mobiles%}
         <tr>

@@ -6,16 +6,16 @@
     <div class="row">
         <div class="col-12">
             <div class="cartview">
-                <h2 style="text-align:center">My Cart</h2>
+                <h2 style="text-align:center;font-family: 'Acme', sans-serif;">MY CART</h2>
                <h4 style="text-align:right"> Cart Total: ₹{{total.price_total__sum}}</h4>
                 <table class="table" style="color:white">
                     {% for cart_item in cart_items%}
                     <tr>
                         <td style="width:10%;height:10%;"><img src="{{cart_item.product.image.url}}" class="card-img-top" alt="..."></td>
-                        <td>{{cart_item.product}} <div>{{cart_item.product.price}}</div> </td>
+                        <td style="color:black;">{{cart_item.product.product_name}} <div>{{cart_item.product.price}}</div> </td>
 
-                        <td>{{cart_item.qty}}</td>
-                        <td>{{cart_item.price_total}}</td>
+                        <td style="color:black;">{{cart_item.qty}}</td>
+                        <td style="color:black;">₹{{cart_item.price_total}}</td>
                         <td><a href="{%url 'removeitem' cart_item.id%}" class="btn btn-danger">Remove Item</a></td>
                         <td><a href="{%url 'cartorder' cart_item.id%}" class="btn btn-warning">Buy Now</a></td>
                           </tr>
@@ -23,14 +23,14 @@
                     {%endfor%}
 
                 </table>
-                <table class="table" style="color:white;font-size:24px;font-weight:500;">
-                    <tr>
-                        <td>Sub Total: ₹{{total.price_total__sum}}</td>
-                    </tr>
-                    <tr>
+<!--                <table class="table" style="color:black;font-size:24px;font-weight:500;">-->
+<!--                    <tr>-->
+<!--                        <td>Sub Total: ₹{{total.price_total__sum}}</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
 <!--                        <td><a href="#" class="btn btn-success">Proceed to Buy</a></td>-->
-                    </tr>
-                </table>
+<!--                    </tr>-->
+<!--                </table>-->
             </div>
         </div>
     </div>

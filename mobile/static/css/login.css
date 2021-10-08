@@ -4,6 +4,7 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
+    background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
 
 }
 .user_card {
@@ -11,7 +12,7 @@ html {
     margin-left:50%;
     margin-top: auto;
     margin-bottom: auto;
-    background: #ab0746;
+    background: linear-gradient(to right, #334d50, #cbcaa5);
     position: relative;
     display: flex;
     justify-content: center;
@@ -35,7 +36,7 @@ html {
 
 .login_btn {
     width: 100%;
-    background: #636e00 !important;
+    background: #870000 !important;
     color: white !important;
 }
 .login_btn:focus {

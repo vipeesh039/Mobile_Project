@@ -2,15 +2,16 @@
 {% extends 'mobile/base.html' %}
 {% block body_block %}
 
-<div class="row">
 
-    <div class="col-4">
-        <div class="card" style="width: 18rem;">
-  <img src="{{mobile.image.url}}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">name:{{mobile.product_name}}</h5>
-    <p class="card-text">Price:{{mobile.price}}</p>
-      <p class="card-text">Specs:{{mobile.spec}}</p>
+<div class="card">
+  <img src="{{mobile.image.url}}" alt="Avatar" style="width:25%">
+  <div class="container">
+    <h4><b>{{mobile.product_name}}</b></h4>
+    <h5>{{mobile.price}}</h5>
+      <p>Specifications:<br>{{mobile.spec}}</p>
+  </div>
+</div>
+
 
       {%if not request.user.is_superuser%}
     <a href="{% url 'order' mobile.id%}" class="btn btn-primary">Buy Now</a>

@@ -3,9 +3,11 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
+    background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+
 }
 .user_card {
-    width: 600px;
+    width: 380px;
     margin-left:50%;
     margin-top: auto;
     margin-bottom: auto;
@@ -49,3 +51,5 @@ html {
     box-shadow: none !important;
     outline: 0px !important;
 }
+
+

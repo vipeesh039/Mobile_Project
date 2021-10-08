@@ -8,10 +8,12 @@ class CreateProductForm(ModelForm):
         model=Product
         fields="__all__"
 
+
 class UserRegistrationForm(UserCreationForm):
     class Meta:
         model=User
         fields=["username","password1","password2","email"]
+
 
 class LoginForm(forms.Form):
     username=forms.CharField()
